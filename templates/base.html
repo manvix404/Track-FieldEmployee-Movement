@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <html>
+	<head>
+		<title>The GroundBreakers</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{{ url_for('static', filename='123.css') }}">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+ 
+	</head>
+	<body bgcolor="#F5F5F5">
+		<nav class="navbar bg-light navbar-light fixed-top shadow-sm navbar-expand-lg ">
+        <a href="index.html" class="navbar-brand">
+            <h1 class="m-0 display-5">The<span class="text-primary">GroundBreakers</span></h1>
+        </a>
+        <button type="button" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav m-auto">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="building.html" class="nav-item nav-link">Clients</a>
+				<a href="map.html" class="nav-item nav-link">Tracking</a>
+                <a href="contact" class="nav-item nav-link">Contacts</a>
+            </div>
+        </div>
+    </nav>
+		<h1 style="padding-top:120px;"align="center">Welcome to The Company</h1>
+		<div class="head">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzoA2SNDoyOR0Su_dMpbgv1fnwd01Lajhc7A&usqp=CAU" alt="Snow" style="padding-left:500px;padding-bottom:100px;padding-top:50px" width="1030" height="600">
+
+		</div>		
+		<table class="tab" width="1300" height="200">
+			<tr style="font-size:25">
+				<th style="padding-left:180px">Product</th>
+				<th style="padding-left:40">Company</th>
+				<th style="padding-left:40">Community</th>
+				<th style="padding-left:40">Support</th>
+				<th style="padding-left:40">Gym</th>
+			</tr>
+			<tr>
+				<td width="100" style="padding-left:180px">
+				<ul type="none" class="lop">
+					<li>Templates </li>
+					<li>Explore</li>
+					<li>Features</li>
+					<li>Website Builder</li>
+					<li>Web Accessibility</li>
+					<li>Velo</li>
+					<li>Wix Playground</li>
+				</ul></td>
+				<td width="100">
+				<ul type="none" class="lop">
+					<li>Templates</li>
+					<li>Explore</li>
+					<li>Features</li>
+					<li>Website Builder</li>
+					<li>Web Accessibility</li>
+					<li>Velo</li>
+					<li>Wix Playground</li>
+				</ul></td>
+				<td width="100">
+				<ul type="none" class="lop" >
+					<li>Templates</li>
+					<li>Explore</li>
+					<li>Features</li>
+					<li>Website Builder</li>
+					<li>Web Accessibility</li>
+					<li>Velo</li>
+					<li>Wix Playground</li>
+				</ul></td>
+				<td width="100"><ul type="none" class="lop">
+					<li>Templates</li>
+					<li>Explore</li>
+					<li>Features</li>
+					<li>Website Builder</li>
+					<li>Web Accessibility</li>
+					<li>Velo</li>
+					<li>Wix Playground</li>
+				</ul></td>
+				<td width="200">
+				<p class="lip">Wix.com is a leading cloud-based development platform 
+				with millions of users worldwide. We make it easy for everyone
+				to create a beautiful, professional web presence.<br><br>
+				Promote your business, showcase your art, set up an 
+				online shop or just test out new ideas. The Wix website
+				builder has everything you need to create a fully personalized
+				, high-quality free website.<br><br>© 2006-2022 Wix.com, Inc<p>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-pinterest"></a>
+				</td>
+			</tr>
+		</table>
+		<br><br><br>
+
+
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
